@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The viewport meta tag scales the web page for all devices, which causes mobile devices to "zoom in" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Examples</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/default.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>3.4. Nesting Grids</h1>
+        <p>Nesting grids allows us to create more complex layouts.</p>
+    </div>
+    <div class="show-grid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <div>
+                        Level 1: .col-sm-9
+                        <p> I may choose to add some content to this level.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8 col-sm-6">
+                            <div>Level 2: .col-xs-8 .col-sm-6</div>
+                            <p>Then I can also organize content into columns within a row.</p>
+                        </div>
+                        <div class="col-xs-4 col-sm-6">
+                            <div>Level 2: .col-xs-4 .col-sm-6</div>
+                            <img class="img-responsive" src="../images/yo-dawg.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div>
+                        Level1: .col-sm-3
+                        <p>I have a sidebar over here!</p>
+                        <p>I could put all kinds of stuff in here - navigation, advertisements, click bait... The possibilities are endless!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt mb">
+        <h2>The Code</h2>
+        <pre>
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-9&quot;&gt;
+        &lt;div&gt;
+            Level 1: .col-sm-9
+            &lt;p&gt; I may choose to add some content to this level.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-xs-8 col-sm-6&quot;&gt;
+                Level 2: .col-xs-8 .col-sm-6
+                &lt;p&gt;Then I can also organize content into columns within a row.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-4 col-sm-6&quot;&gt;
+                Level 2: .col-xs-4 .col-sm-6
+                &lt;img class=&quot;img-responsive&quot; src=&quot;../images/yo-dawg.jpg&quot; /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-3&quot;&gt;
+        &lt;div&gt;
+            Level1: .col-sm-3
+            &lt;p&gt;I have a sidebar over here!&lt;/p&gt;
+            &lt;p&gt;I could put all kinds of stuff in here - navigation, advertisements, click bait... The possibilities are endless!&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+    </div>
+
+    <div class="container mt">
+        <a class="mt" href="responsive-grid.html">&lt; Back</a>
+        <a class="mt ml" href="offset.html">Next Example &gt;</a>
+        <div class="mt">
+            <a sclass="mt" href="../index.html">Table of Contents</a>
+        </div>
+    </div>
+</body>
+</html>

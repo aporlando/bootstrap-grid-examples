@@ -1,0 +1,74 @@
+.show-grid .row,
+.show-grid .row [class^=col-]>.row {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(240, 248, 255);
+    border: 1px solid rgb(210, 219, 255);
+}
+
+.show-grid .row [class^=col-]:before {
+    content: '.col-*';
+    color: green;
+}
+
+.show-grid .row [class^=col-] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(139,195,74,.3);
+    border: 1px solid rgb(139,195,74);
+}
+
+.show-grid .row [class^=col-]>*,
+.show-grid .content {
+    background-color: rgba(1,1,1,.2);
+    font-size: 25pt;
+}
+
+.content {
+    background-color: antiquewhite;
+    border: 1px solid #000;
+}
+
+.default-font {
+    font-size: initial;
+}
+
+.show-grid .row:before {
+    content: '.row';
+    color: #2196F3;
+}
+
+.show-grid .container,
+.show-grid .container-fluid  {
+    background-color: rgb(183, 150, 183);
+    border: 1px solid rgb(78, 0, 78);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.show-grid .container:before {
+    content: '.container';
+    color: white;
+}
+
+.show-grid .container-fluid:before {
+    content: '.container-fluid';
+    color: white;
+}
+
+.mt {
+    margin-top: 2rem;
+}
+.mb {
+    margin-bottom: 2rem;
+}
+.ma {
+    margin: 3rem;
+}
+.mt-0 {
+    margin-top: 0 !important;
+}
+.ml {
+    margin-left: 3rem;
+}

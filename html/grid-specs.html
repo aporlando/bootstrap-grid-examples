@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The viewport meta tag scales the web page for all devices, which causes mobile devices to "zoom in" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Examples</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/default.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>3.2. Breakpoints</h1>
+        <p>Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying any <code>.col-md-*</code> class to an element will not only affect its styling on medium devices but also on large devices if a <code>.col-lg-*</code> class is not present.</p>
+        <p>Go to the <a href="responsive-grid.html">next page</a> to see an example grid that demonstrates these breakpoints.</p>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th> Extra small devices <small>Phones (&lt;768px)</small></th>
+                        <th> Small devices <small>Tablets (≥768px)</small> </th>
+                        <th> Medium devices <small>Desktops (≥992px)</small> </th>
+                        <th> Large devices <small>Desktops (≥1200px)</small> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="text-nowrap" scope="row">Grid behavior</th>
+                        <td>Horizontal at all times</td>
+                        <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+                    </tr>
+                    <tr>
+                        <th class="text-nowrap" scope="row">Container width</th>
+                        <td>None (auto)</td>
+                        <td>750px</td>
+                        <td>970px</td>
+                        <td>1170px</td>
+                    </tr>
+                    <tr>
+                        <th class="text-nowrap" scope="row">Class prefix</th>
+                        <td><code>.col-xs-</code></td>
+                        <td><code>.col-sm-</code></td>
+                        <td><code>.col-md-</code></td>
+                        <td><code>.col-lg-</code></td>
+                    </tr>
+                    <tr> <th class="text-nowrap" scope="row"># of columns</th> <td colspan="4">12</td> </tr>
+                    <tr> <th class="text-nowrap" scope="row">Column width</th> <td class="text-muted">Auto</td> <td>~62px</td> <td>~81px</td> <td>~97px</td> </tr>
+                    <tr> <th class="text-nowrap" scope="row">Gutter width</th> <td colspan="4">30px (15px on each side of a column)</td> </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container mt">
+        <a class="mt" href="column-wrapping.html">&lt; Back</a>
+        <a class="mt ml" href="responsive-grid.html">Next Example &gt;</a>
+        <div class="mt">
+            <a sclass="mt" href="../index.html">Table of Contents</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The viewport meta tag scales the web page for all devices, which causes mobile devices to "zoom in" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Examples</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/default.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>3.1. Columns wrap within rows</h1>
+        <p>If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.</p>
+    </div>
+    <div class="show-grid">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div>col4</div>
+                </div>
+                <div class="col-xs-4">
+                    <div>col4</div>
+                </div>
+                <div class="col-xs-4">
+                    <div>col4</div>
+                </div>
+                <div class="col-xs-8">
+                    <div>col8</div>
+                </div>
+                <div class="col-xs-5">
+                    <div>col5
+                    <p>Since 9 + 5 = 13 > 12, this column gets wrapped onto a new line as one contiguous unit.</p>
+                    </div>
+                </div>
+                <div class="col-xs-7">
+                    <div>col7</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt mb">
+        <pre>
+&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-xs-4"&gt;
+            col4
+        &lt;/div&gt;
+        &lt;div class="col-xs-4"&gt;
+            col4
+        &lt;/div&gt;
+        &lt;div class="col-xs-4"&gt;
+            col4
+        &lt;/div&gt;
+        &lt;div class="col-xs-8"&gt;
+            col8
+        &lt;/div&gt;
+        &lt;div class="col-xs-5"&gt;
+            col5
+        &lt;/div&gt;
+        &lt;div class="col-xs-7"&gt;
+            col7
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+    </div>
+
+    <div class="container mt">
+        <a class="mt" href="basic-grid.html">&lt; Back</a>
+        <a class="mt ml" href="grid-specs.html">Next Example &gt;</a>
+        <div class="mt">
+            <a sclass="mt" href="../index.html">Table of Contents</a>
+        </div>
+    </div>
+</body>
+</html>

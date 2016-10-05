@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The viewport meta tag scales the web page for all devices, which causes mobile devices to "zoom in" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Examples</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/default.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>3.3. Designing for Screen Size</h1>
+        <p>We can use the column prefixes to design layouts that change depending on screen size.</p>
+        <p>Try changing your browser width to see how it changes the layout of the columns in the grid.</p>
+    </div>
+    <div class="show-grid">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div>.col-xs-12 .col-sm-6 .col-md-8</div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div>.col-xs-6 .col-md-4</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-4"><div>.col-xs-6 .col-sm-4</div></div>
+                <div class="col-xs-6 col-sm-4"><div>.col-xs-6 .col-sm-4</div></div>
+                <!-- Optional: clear the XS cols if their content doesn't match in height -->
+                <div class="clearfix visible-xs-block"></div>
+                <div class="col-xs-6 col-sm-4"><div>.col-xs-6 .col-sm-4</div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3>The Code</h3>
+        <pre>
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-12 col-sm-6 col-md-8&quot;&gt;
+            .col-xs-12 .col-sm-6 .col-md-8
+        &lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;
+            .col-xs-6 .col-md-4
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+        &lt;!-- Optional: clear the XS cols if their content doesn't match in height --&gt;
+        &lt;div class=&quot;clearfix visible-xs-block&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+    </div>
+
+    <div class="container mt">
+        <a class="mt" href="grid-specs.html">&lt; Back</a>
+        <a class="mt ml" href="nesting.html">Next Example &gt;</a>
+        <div class="mt">
+            <a sclass="mt" href="../index.html">Table of Contents</a>
+        </div>
+    </div>
+</body>
+</html>
